@@ -1,0 +1,18 @@
+div.statistics{
+    margin-left: 20px;
+    background-color: #212245;
+
+}
+
+div.statistic{
+    margin-left: 15px;
+}
+
+h1{
+    margin-left: 30px;
+}
+
+.bg{
+    background-color: #212245;
+    height: 100%;
+}

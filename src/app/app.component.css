@@ -1,0 +1,32 @@
+.filler {
+    flex: 1 1 auto;
+ }
+ .gap {
+    margin-right: 10px;
+ }
+
+ button.profile-icon{
+    margin-right: 1em;
+ }
+
+ button.new-advertisement{
+   margin-left: 1em;
+}
+navbar {
+  color: red;
+}
+
+.startBackground {
+  width: auto;
+  /*background-image: url("src/app/images/renta-car.jpg");*/
+  background-repeat: no-repeat;
+  min-height: 56.1em;
+  background-size: cover;
+  height: auto;
+
+}
+
+a.logout:hover{
+   text-decoration: underline;
+}
+

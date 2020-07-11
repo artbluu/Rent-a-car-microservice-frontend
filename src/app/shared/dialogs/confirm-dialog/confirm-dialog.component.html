@@ -1,0 +1,23 @@
+<div>
+  <div mat-dialog-content>
+    <div *ngIf="data == 'Delete'">
+      <h5>Do you want to delete item?</h5>
+    </div>
+
+    <div *ngIf="data == 'Brand'">
+      Or click here to open brand and see <button class="linkBtn" (click) = "Open()"> models </button>
+    </div>
+    <div *ngIf="data== 'User'">
+      <h5>Are you sure you want to change status?</h5>
+    </div>
+    <div *ngIf="data== 'Logout'">
+      <h5>Are you sure you want to logout?</h5>
+    </div>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <div class="center">
+    <button (click)="clickedYes()" class="btn btn-primary mr-1"> Yes</button>
+    <button (click)="Cancel()" class="btn btn-secondary">No</button>
+  </div>
+</div>

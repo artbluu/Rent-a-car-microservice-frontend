@@ -1,0 +1,74 @@
+p{
+    font-size: 20px;
+}
+
+img.profile-image{
+    width: 300px;
+    height: 350px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.map{
+  margin-left: 80px;
+  margin-top: 20px;
+}
+div.car-info{
+    margin-left: 105px;
+}
+
+img.image-from-gallery{
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+div.imageGallery{
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+div.star-rating{
+    margin-top:30px;
+    margin-left: 80px;
+}
+
+label{
+    margin-top: 2em;
+    margin-left: 32em;
+}
+
+hr{
+    margin-left: 30em;
+}
+
+h5{
+    margin-top: 3em;
+    margin-left:27em;
+}
+
+h6.rating{
+    margin-top: 3em;
+    margin-left: 6em;
+}
+
+label.rating{
+    margin-top: 0.5em;
+    margin-left: 6em;
+}
+
+form{
+    margin-left: 35em;
+    margin-bottom: 5em;
+}
+
+button.btn{
+    margin-left: 2em;
+    margin-bottom: 2.5em;
+}
+
+agm-map{
+  height: 400px;
+  width: 400px;
+}

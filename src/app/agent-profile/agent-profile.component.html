@@ -1,0 +1,36 @@
+<mat-drawer-container class="tp-container " >
+    <mat-drawer mode="side" opened class="sidenav">
+
+        <mat-list>
+          <mat-list-item>
+              <button class="btn text-white ml-5" (click) = "openAgentInfo()"> Agent information</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button class="btn text-white ml-5" (click)="acceptRequests()"> Accept requests</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button class="btn text-white ml-5" (click) = "createPricelist()"> Create pricelist </button>
+          </mat-list-item>
+          <mat-list-item>
+            <button class="btn text-white ml-5" (click) = showAllRents()>All rents</button>
+          </mat-list-item>
+
+        </mat-list>
+
+    </mat-drawer>
+    <mat-drawer-content class="pl-5 bg">
+      <div class="container pl-5" *ngIf = "showAgentInfo">
+        <app-agent-info (notify)="onNotify()"></app-agent-info>
+      </div>
+      <div class="container" *ngIf = "showAllRented">
+        <app-rents (notify)="onNotify()"></app-rents>
+      </div>
+      <div *ngIf="showAccept" class="container">
+        <app-accept-requests (notify)="onNotify()"></app-accept-requests>
+      </div>
+      <div class="container" *ngIf = "showCreatePricelist">
+        <app-pricelist (notify)="onNotify()"></app-pricelist>
+      </div>
+
+    </mat-drawer-content>
+  </mat-drawer-container>

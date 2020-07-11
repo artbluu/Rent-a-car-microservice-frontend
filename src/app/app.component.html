@@ -1,0 +1,40 @@
+<mat-toolbar color = "#343434">
+
+      <button mat-mini-fab aria-label="Example icon button with a home icon" class="mr-2" routerLink="/homepage" class="mr-3">
+        <mat-icon>home</mat-icon>
+      </button>
+  <button *ngIf="client || agent" class="mr-2" mat-mini-fab routerLink="/new-advertisement">
+        <mat-icon>add_box</mat-icon>
+      </button>
+  <button *ngIf="agent" class="mr-2" mat-mini-fab routerLink="/advertisement-statistics">
+        <mat-icon>show_chart</mat-icon>
+      </button>
+  <button *ngIf="client || agent" class="mr-2" mat-mini-fab routerLink="/messages">
+    <mat-icon>message</mat-icon>
+  </button>
+      <button mat-mini-fab routerLink="/admin/user" *ngIf="admin" class="mr-2">
+        <mat-icon>person_add</mat-icon>
+      </button>
+
+      <span></span>
+      <span class = "filler"></span>
+
+
+
+      <a routerLink="/login" *ngIf="unauthorized" class="text-white mr-3">Login</a>
+
+
+  <a *ngIf="client" class="text-white mr-3" routerLink="/client-profile">Profile</a>
+  <a *ngIf="admin" class="text-white mr-3" routerLink="/profile">Profile</a>
+  <a *ngIf="agent" class="text-white mr-3" routerLink="/agent-profile">Profile</a>
+      <a class="text-white mr-3 logout" (click)="logout()" *ngIf="!unauthorized">Logout</a>
+
+      <button mat-mini-fab style="margin-left:10px;" *ngIf="client" (click) = "openCart()">
+        <mat-icon matBadge="{{cartAds.length}}" matBadgePosition="above after" matBadgeColor="warn"  matBadgeOverlap="false"  matBadgeSize="medium">shopping_cart</mat-icon>
+      </button>
+
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+

@@ -1,0 +1,181 @@
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+  height: 100%;
+  width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  .discount{
+    color:green;
+    font-size: 22px;
+
+  }
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 5px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .card button:hover {
+    opacity: 0.7;
+  }
+.picture-card{
+    width: 200px;
+    height: 250px;
+}
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: grey;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  a {
+    color: rgb(0, 0, 0);
+
+  }
+
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+  }
+  50% {
+    background-color: #2d2d2d;
+    -webkit-box-shadow: 0 0 40px #2d2d2d;
+  }
+  100% {
+    background-color: #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+  }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+  }
+  50% {
+    background-color: #2d2d2d;
+    -webkit-box-shadow: 0 0 40px #2d2d2d;
+  }
+  100% {
+    background-color: #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+  }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+  }
+  50% {
+    background-color: #2d2d2d;
+    -webkit-box-shadow: 0 0 40px #2d2d2d;
+  }
+  100% {
+    background-color: #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+  }
+  50% {
+    background-color: #2d2d2d;
+    -webkit-box-shadow: 0 0 40px #2d2d2d;
+  }
+  100% {
+    background-color: #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+  }
+}
+
+.stars {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #a0a0a0;
+}
+
+.full {
+  color: #00240f;
+}
+
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: #00240f;
+}
+
+.blackFont {
+  color: #2F3061;
+}
+
+.greyColor {
+  font-size: 35px;
+  color: gray;
+}
+
+.card button:disabled {
+  opacity: 0.7;
+}

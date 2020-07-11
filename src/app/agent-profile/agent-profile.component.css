@@ -1,0 +1,42 @@
+.tp-container {
+  height: 92.5%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.container{
+  /* border: 1px solid red; */
+  margin:40px;
+  height: 96%;
+
+}
+
+.bg{
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-color: #212245;
+}
+
+.sidenav{
+  width: 330px;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #2F3061;
+}
+
+.btn{
+  font-size: 1.3rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.mat-list-item:hover {
+  background-color: #212245;
+  box-shadow: none;
+}
+
+.mat-list {
+  margin-top: 0;
+  padding-top: 0;
+}
